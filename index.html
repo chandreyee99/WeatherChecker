@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+
+
+        <div class="home-content">
+            <h1>Welcome to Weather Checker</h1>
+            <p style="color: rgb(202, 202, 203); font-size: 15px;">Check the Current Weather of Any City</p>
+            <button><a href="#services">Click here <i class="fas fa-arrow-right"></i></a></button>
+        </div>
+
+    </section>
+
+    <!-- About Section -->
+    <div class="container">
+        <section id="about" class="about-section">
+            <div class="about-content">
+                <h2 style="font-weight: bold;">ABOUT</h2>
+                <hr><br>
+                <div class="about-grid">
+                    <div class="about-image">
+                        <img src="images/4.jpeg" alt="Weather Checker Image">
+                    </div>
+                    <div class="about-description">
+                        <p style="text-align: justify;">Weather Checker is an innovative weather forecasting service
+                            that provides accurate and
+                            reliable
+                            weather information for various locations worldwide. Our platform uses advanced technology
+                            and
+                            real-time data to deliver up-to-date weather forecasts, helping you plan your activities and
+                            stay prepared for changing weather conditions.</p>
+                        <a href="#services" class="btn">Explore Services</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <h2 style="text-shadow: 1px 2px black;">CHECK WEATHER</h2>
+        <hr>
+        <br>
+        <div class="container" id="cont1">
+
+            <div class="wrapper">
+                <div class="img_section">
+                    <div class="city-temp">
+                        <div id="cityTemp"></div>
+                    </div>
+                </div>
+                <div class="content_section">
+                    <div class="weather-info">
+                        <input type="text" id="cityInput" placeholder="Enter city">
+                        <button class="butt" onclick="getWeather()">Get Weather</button>
+                        <div id="weatherData"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Contact Section -->
+    <div class="container" style="margin-top: 40px; ">
+        <section id="contact" class="contact-section">
+            <h2>Get in touch with us <i class="fas fa-heart" style="color: #371168;"></i></h2>
+            <div class="contact-form">
+                <form action="#" method="POST">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
+                    <button type="submit" class="submit-btn" onclick="myFunction()"><a href="">Message</a></button>
+
+                    <script>
+                        function myFunction() {
+                            alert("Thank you !! for contacting us ");
+                        }
+                    </script>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About</h3>
+                <p>Stay updated with the latest weather conditions and forecasts with our Weather App.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: info@weatherapp.com</p>
+                <p>Phone: +1 (555) 123-4567</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow</h3>
+                <p>Connect with us on social media:</p>
+                <ul class="social-media-icons">
+                    <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Weather App. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+
+
+
+
+</html>
